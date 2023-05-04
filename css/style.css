@@ -16,7 +16,43 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+margin-top: 0px;
 }
+
+header{
+display: flex;
+flex-direction: row;
+height: 80px;
+justify-content: space-between;
+
+}
+
+header ul{
+list-style: none;
+display: flex;
+flex-direction: row;
+gap: 60px;
+margin-right: 50px;
+margin-top: 0px;
+}
+
+.element-nav{
+padding-top: 16px;
+}
+
+.element-nav:hover {
+border-top: solid 2px;
+border-color: #0065FC;
+
+}
+
+header img{
+padding: 30px;
+height: 20px;
+width: 61px;
+}
+
 
 .main-container {
     width: 100%;
