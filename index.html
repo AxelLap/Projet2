@@ -28,11 +28,11 @@
     <div class="main-container">
         <main>
             <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-
+            <p class="section-subtitle">En plein centre ville ou en pleine nature</p>
             <form action="" method="get">
                 <label for="recherche"><i class="fa-solid fa-location-dot fa-lg" style="color: #000000;"></i></label>
                 <input class="champ-saisie" type="text" name="recherche" id="recherche" placeholder="Marseille, France">
+                <button type="submit" class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></button>
                 <input class="bouton-recherche" type="submit" value="Rechercher">
             </form>
 
@@ -134,23 +134,22 @@
                                 </div>
                             </div>
                         </article>
-                        <a href="#">
-                            <article class="card">
-                                <img src="images/hebergements/marcus-loke.jpg" alt="Chambre avec lit superposés">
-                                <div class="card-content">
-                                    <h3 class="card-title">Auberge La Canebière</h3>
-                                    <p>Nuit à partir de 25<span>€</span></p>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
+
+                        <article class="card">
+                            <img src="images/hebergements/marcus-loke.jpg" alt="Chambre avec lit superposés">
+                            <div class="card-content">
+                                <h3 class="card-title">Auberge La Canebière</h3>
+                                <p>Nuit à partir de 25<span>€</span></p>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
-                            </article>
-                        </a>
+                            </div>
+                        </article>
                         <article class="card">
                             <img src="images/hebergements/nicate-lee.jpg" alt="Chambre avec lits superposés">
                             <div class="card-content">
@@ -257,8 +256,35 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="list-container">
+                <p class="list-title">A propos</p>
+                <ul class="footer-list">
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales</li>
+                    <li>Données et confidentialités</li>
+                </ul>
+            </div>
+            <div class="list-container">
+                <p class="list-title">Nos hébergements</p>
+                <ul class="footer-list">
+                    <li>Charte qualité</li>
+                    <li>Proposer votre hôtel</li>
+                </ul>
+            </div>
+            <div class="list-container">
+                <p class="list-title">Assistance</p>
+                <ul class="footer-list">
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

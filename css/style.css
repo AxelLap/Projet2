@@ -99,8 +99,6 @@ label{
     width:3em;
 }
 
-
-
 .champ-saisie{
     padding-left: 24px;
     margin-right: 0px;
@@ -110,7 +108,14 @@ label{
     font-weight: 700;
     font-size: 18px;
 }
-
+form .fa-magnifying-glass{
+    margin-left: 0px;
+    height: 100%;
+    width: 3em;
+    background-color: #0065FC;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+}
 .bouton-recherche{
     margin-left: 0px;
     height: 100%;
@@ -221,7 +226,7 @@ label{
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
+    
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -236,6 +241,7 @@ label{
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
+    background-color: var(--main-bg-color);
 }
 
 .hebergements .hebergements-title{
@@ -282,6 +288,7 @@ label{
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
 }
 
 .populaires-title {
@@ -358,11 +365,61 @@ label{
     height: 14%;
     margin: 0px;
 }
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/* fin Activités */
 
+/* footer */
+footer{
+    width: 1340px;
+    background-color:#F2F2F2;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 65px;
+}
+
+.footer-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 0px;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.list-title{
+    font-weight: 700;
+    padding-left: 20px;
+}
+/* Fin footer */
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/* Desktop */
+@media (min-width: 1024px){
+    form .fa-magnifying-glass{
+        display: none;
+    }
+    
+}
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 1024px) {
+    form .fa-magnifying-glass{
+        display: none;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -395,7 +452,3 @@ label{
     }
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
